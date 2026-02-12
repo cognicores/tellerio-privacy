@@ -56,7 +56,8 @@ We do **not**:
 - Sell or share prompts  
 - Use prompts for advertising or profiling  
 
-Prompts are processed transiently and only for providing the requested functionality.
+Prompts are processed in memory only during story generation and are not written to disk or server logs. 
+Both the prompt and the generated story are discarded from server memory once the response is delivered.
 
 ---
 
@@ -93,7 +94,7 @@ Because Tellerio does not collect identifiable personal data, most usage does no
 
 ## 4. International Data Transfers
 
-Our backend infrastructure may process data on servers located outside your country of residence.
+Our backend infrastructure processes data on servers located within the European Union.
 
 Where required, we implement appropriate safeguards consistent with:
 
@@ -150,11 +151,11 @@ While no method of transmission over the Internet is 100% secure, we take approp
 
 ## 9. Third-Party Services
 
-We may rely on trusted third-party services for:
+We rely on the following trusted third-party services:
 
-- Cloud infrastructure hosting  
-- Subscription management  
-- App distribution (Google Play)
+- Cloudflare — Provides secure network routing between the App and our servers. All requests pass through Cloudflare's infrastructure.
+- RevenueCat — Subscription status management.
+- Google Play — App distribution and payment processing.
 
 These providers process only the data necessary to provide their services and operate under their own privacy policies.
 
