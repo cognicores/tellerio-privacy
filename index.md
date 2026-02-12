@@ -56,8 +56,9 @@ We do **not**:
 - Sell or share prompts  
 - Use prompts for advertising or profiling  
 
-Prompts are processed in memory only during story generation and are not written to disk or server logs. 
-Both the prompt and the generated story are discarded from server memory once the response is delivered.
+Prompts are processed in server RAM only during story generation and are not written to disk, logs, or any persistent storage. 
+Both the prompt and the generated story are discarded from server memory immediately after the response is delivered. 
+All data is transmitted over encrypted connections (HTTPS/TLS) to ensure security during transit.
 
 ---
 
